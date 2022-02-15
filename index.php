@@ -1,3 +1,9 @@
+<?php
+session_start();
+  include("modules/connexiondb.php");
+	include("modules/requete_login.php");
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -30,13 +36,16 @@
           <img id="pplusLogo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="ressources/login/pplus-logo-wb.png" height="72" alt="Particules Plus Logo">
         </div>
         <div class="formCentered">
-          <form>
+          <form method='POST'>
             <label class="sr-only loginText">ID</label>
-            <input type="login" id="loginId" class="form-control" placeholder="login" required autofocus>
+            <input name="identifiant" type="login" id="loginId" class="form-control" placeholder="login" required autofocus>
             <label class="sr-only loginText">Password</label>
-            <input type="password" id="loginPassword" class="form-control" placeholder="password">
-            <button id="loginButton" class="btn btn-lg btn-primary btn-signin" type="submit">Login</button>
+            <input name="mdp" type="password" id="loginPassword" class="form-control" placeholder="password">
+            <button type="submit" name="submitBtnLogin" id="loginButton" class="btn btn-lg btn-primary btn-signin" type="submit">Login</button>
           </form>
+          </div>
+            <span class="loginMsg"><?php echo @$msg;?></span>
+          </div>
         </div>
       </div>
     </div>
