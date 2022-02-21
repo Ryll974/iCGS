@@ -72,6 +72,26 @@ html, body {
 
 /* page main.html -- page de principale - sondage */
 
+.techs {
+  max-height: 120px;
+  border: 1px solid rgb(139, 24, 24);
+  display: flex;
+  overflow-x: auto;
+}
+
+.techs::-webkit-scrollbar{
+  width: 0;
+}
+
+.techs .tech{
+  min-width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  background-color: rgb(221, 221, 221);
+  margin-right: 2px;
+}
+
 /* --------------------------------------------- */
 /* les id -- par ordre d'apparition dans le code */
 /* --------------------------------------------- */

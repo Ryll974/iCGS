@@ -84,14 +84,44 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <div class="container-fluid">
       <div class="container">
         <div class="row">
-          <article id="displayMessages" class="col-xs-9 col-sm-9 col-md-10 col-lg-10 boxFormat">
+          <article id="displayMessages" class="col-xs-9 col-sm-9 col-md-9 col-lg-9 boxFormat">
 
           </article>
-          <article id="displayQuestions" class="col-xs-3 col-sm-3 col-md-2 col-lg-2 boxFormat">
+
+          <article class="col-xs-1 col-sm-1 col-md-1 col-lg-1 boxFormat">
+
+          </article>
+        
+          <article id="displayQuestions" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 boxFormat">
             
           </article>
         </div>
       </div>
+    </div>
+
+    <!-- codage de la zone d'affichage des techniciens -->
+    <div class="techs">
+      <div class="tech">01</div>
+      <div class="tech">02</div>
+      <div class="tech">03</div>
+      <div class="tech">04</div>
+      <div class="tech">05</div>
+      <div class="tech">06</div>
+      <div class="tech">07</div>
+      <div class="tech">08</div>
+      <div class="tech">09</div>
+      <div class="tech">10</div>
+      <div class="tech">11</div>
+      <div class="tech">12</div>
+      <div class="tech">13</div>
+      <div class="tech">14</div>
+      <div class="tech">15</div>
+      <div class="tech">16</div>
+      <div class="tech">17</div>
+      <div class="tech">18</div>
+      <div class="tech">19</div>
+      <div class="tech">20</div>
+      <div class="tech">21</div>
     </div>
 
   </body>
