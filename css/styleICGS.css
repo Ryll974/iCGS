@@ -60,14 +60,14 @@ html, body {
 }
 
 .loginText {
-    padding-top: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.3em;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    margin-right: 1000px;
+  padding-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.3em;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin-right: 1000px;
   }
 
 /* page main.html -- page de principale - sondage */

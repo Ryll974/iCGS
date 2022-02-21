@@ -1,3 +1,12 @@
+<?php 
+session_start();
+if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
+	
+} else { 
+	header('location:index.php');
+}
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -28,7 +37,7 @@
     <div id="navBar" class="container-fluid">
       <nav>
         <div class="navLeft">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="modules/logout.php">
             <img id="returnArrow" src="ressources/navBar/returnArrow.png" alt="retour page login">
           </a>
         </div>

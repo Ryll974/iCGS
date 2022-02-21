@@ -1,1 +1,7 @@
+git history :
+-------------
+
+git add .
+
 git commit -m "ver.0.14 -- html > php + procédure login"
+
