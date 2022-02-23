@@ -9,3 +9,7 @@ git commit -m "ver.0.15 -- logout main page"
 
 git commit -m "ver.0.16 -- séléction techniciens en scrolling horizontal sur main page"
 
+git commit -m "ver.0.17 -- intégration table Techs + photos des techs + requete affichage techs"
+
+git commit -m "ver.0.18 -- ajout de la photo des techs dans la zone de défilement horizontale (BETA)"
+
