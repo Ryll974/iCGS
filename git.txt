@@ -17,3 +17,7 @@ git commit -m "ver.0.19 -- photo des techs dans un cercle -- CSS (BETA)"
 
 git commit -m "ver.0.20 -- optimisation CSS pour scrolling Techs"
 
+git commit -m "ver.0.21 -- click sur portrait Tech --> page Technicien (BETA)"
+
+
+
