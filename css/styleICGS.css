@@ -90,6 +90,10 @@ html, body {
   margin-right: 2px;
 }
 
+.tech img {
+  border-radius: 50%
+}
+
 /* --------------------------------------------- */
 /* les id -- par ordre d'apparition dans le code */
 /* --------------------------------------------- */

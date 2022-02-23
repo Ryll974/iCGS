@@ -15,3 +15,5 @@ git commit -m "ver.0.18 -- ajout de la photo des techs dans la zone de défileme
 
 git commit -m "ver.0.19 -- photo des techs dans un cercle -- CSS (BETA)"
 
+git commit -m "ver.0.20 -- optimisation CSS pour scrolling Techs"
+
