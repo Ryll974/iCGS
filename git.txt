@@ -13,3 +13,5 @@ git commit -m "ver.0.17 -- intégration table Techs + photos des techs + requete
 
 git commit -m "ver.0.18 -- ajout de la photo des techs dans la zone de défilement horizontale (BETA)"
 
+git commit -m "ver.0.19 -- photo des techs dans un cercle -- CSS (BETA)"
+

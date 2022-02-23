@@ -5,6 +5,6 @@
 
 <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
     <div class="tech">
-        <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($row['identifiant']); ?>.png" width="256" height="256" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
+        <img style="border-radius: 50%" src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($row['identifiant']); ?>.png" width="110" height="110" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
     </div>
 <?php endwhile; ?>

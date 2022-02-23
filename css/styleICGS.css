@@ -74,7 +74,6 @@ html, body {
 
 .techs {
   max-height: 120px;
-  border: 1px solid rgb(139, 24, 24);
   display: flex;
   overflow-x: auto;
 }
@@ -88,7 +87,6 @@ html, body {
   height: 110px;
   line-height: 110px;
   text-align: center;
-  background-color: rgb(221, 221, 221);
   margin-right: 2px;
 }
 
