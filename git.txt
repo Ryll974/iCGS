@@ -5,3 +5,7 @@ git add .
 
 git commit -m "ver.0.14 -- html > php + procédure login"
 
+git commit -m "ver.0.15 -- logout main page"
+
+git commit -m "ver.0.16 -- séléction techniciens en scrolling horizontal sur main page"
+
