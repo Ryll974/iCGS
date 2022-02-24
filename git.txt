@@ -19,5 +19,7 @@ git commit -m "ver.0.20 -- optimisation CSS pour scrolling Techs"
 
 git commit -m "ver.0.21 -- click sur portrait Tech --> page Technicien (BETA)"
 
+git commit -m "ver.0.22 -- affichage avis clients --> page Sondage/main (BETA)"
+
 
 
