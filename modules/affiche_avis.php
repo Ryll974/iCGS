@@ -7,8 +7,8 @@
 
     <div>
         <a>
-            <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> avis utilisateur n° <?php echo htmlspecialchars($row['id']); ?></p>
+            <p class="avisClients"> avis utilisateur n° <?php echo htmlspecialchars($row['id']); ?></p>
         </a>
     </div>
-    
+
 <?php endwhile; ?>

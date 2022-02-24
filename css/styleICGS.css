@@ -72,6 +72,14 @@ html, body {
 
 /* page main.html -- page de principale - sondage */
 
+.avisClients {
+  border-radius: 28px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color:black;
+}
+
 .techs {
   max-height: 120px;
   display: flex;
@@ -170,7 +178,13 @@ html, body {
   }
 
   #loginButton {
+    position:absolute;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
     margin-top: 2em;
+    width: 128px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -206,6 +220,14 @@ html, body {
   height: 60em;
   border: 6px solid white;
   border-radius: 28px;
+}
+
+#avisClients {
+  border-radius: 28px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color:black;
 }
 
 #displayQuestions {
