@@ -5,7 +5,7 @@ $choix = "défaut";
 
   switch ($choix_avis) {
 
-    case "":
+    case "random":
       $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
       $choix= "aléatoire";
       break;

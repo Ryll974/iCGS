@@ -25,5 +25,7 @@ git commit -m "ver.0.23 -- implémentation des choix pour l'affichage des avis (
 
 git commit -m "ver.0.24 -- implémentation des choix pour l'affichage des avis (BETA)"
 
+git commit -m "ver.0.25 -- la page main/sondage se modifie en fonction du choix (BETA)"
+
 
 

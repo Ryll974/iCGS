@@ -7,7 +7,7 @@
 
     <div>
         <a>
-            <p class="avisClients"> avis : <?php echo $choix; ?> note : <?php echo htmlspecialchars($row['ng']); ?> -- <?php echo htmlspecialchars($row['date_avis']); ?> -- avis utilisateur n° <?php echo htmlspecialchars($row['id']); ?></p>
+            <p class="avisClients"> note : <?php echo htmlspecialchars($row['ng']); ?> -- <?php echo htmlspecialchars($row['date_avis']); ?> -- <?php echo htmlspecialchars($row['avis']); ?></p>
         </a>
     </div>
 
