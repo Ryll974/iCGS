@@ -23,5 +23,7 @@ git commit -m "ver.0.22 -- affichage avis clients --> page Sondage/main (BETA)"
 
 git commit -m "ver.0.23 -- implémentation des choix pour l'affichage des avis (BETA)"
 
+git commit -m "ver.0.24 -- implémentation des choix pour l'affichage des avis (BETA)"
+
 
 

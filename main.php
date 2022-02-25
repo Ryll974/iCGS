@@ -8,8 +8,9 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 ?>
 
 <!-- définition de la variable choix_avis qui détermine les avis clients qui seront affichés -->
+<!-- par défaut initialisé à une valeur nulle qui correspond à une affichage aléatoire -->
 <?php
-  $choix_avis = "recent";
+  $choix_avis = "";
 ?>
 
 

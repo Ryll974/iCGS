@@ -14,11 +14,11 @@ $choix = "défaut";
       $choix= "récent";
       break;
     case "positive":
-      $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
+      $sql = "SELECT * FROM avis_clients WHERE ng > 3 ORDER BY ng DESC, date_avis DESC LIMIT 50";
       $choix= "positif";
       break;
     case "negative":
-      $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
+      $sql = "SELECT * FROM avis_clients WHERE ng < 3 ORDER BY ng ASC, date_avis DESC LIMIT 50";
       $choix= "négatif";
       break;
 
