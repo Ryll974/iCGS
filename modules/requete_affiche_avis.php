@@ -1,8 +1,29 @@
 <?php 
 // récupérer les avis de la Base de Donnée iCGS (table: avis_clients)
 
-  $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
-   
+$choix = "défaut";
+
+  switch ($choix_avis) {
+
+    case "":
+      $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
+      $choix= "aléatoire";
+      break;
+    case "recent":
+      $sql = "SELECT * FROM avis_clients ORDER BY date_avis DESC LIMIT 50";
+      $choix= "récent";
+      break;
+    case "positive":
+      $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
+      $choix= "positif";
+      break;
+    case "negative":
+      $sql = "SELECT * FROM avis_clients ORDER BY RAND() LIMIT 50";
+      $choix= "négatif";
+      break;
+
+  }
+
   try{
  
    $stmt = $db->query($sql);

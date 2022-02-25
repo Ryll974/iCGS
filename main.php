@@ -7,6 +7,12 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 }
 ?>
 
+<!-- définition de la variable choix_avis qui détermine les avis clients qui seront affichés -->
+<?php
+  $choix_avis = "recent";
+?>
+
+
 <!doctype html>
 <html lang="fr">
 
