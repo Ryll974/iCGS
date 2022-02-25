@@ -10,7 +10,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 <!-- définition de la variable choix_avis qui détermine les avis clients qui seront affichés -->
 <!-- par défaut initialisé à une valeur nulle qui correspond à une affichage aléatoire -->
 <?php
-  $choix_avis = "random";
+    $choix_avis = $_SESSION['sess_choix'];
 ?>
 
 
@@ -62,10 +62,10 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
             <img id="menuHam" src="ressources/navBar/menuHam.png" alt="menu hamburger">
           </a>
           <ul class="dropdown-menu dropdownMenu">
-            <li><a class="dropdown-item dropdownItem" href="main.php">avis aléatoires</a></li>
-            <li><a class="dropdown-item dropdownItem" href="main_R.php">+ récents</a></li>
-            <li><a class="dropdown-item dropdownItem" href="main_P.php">+ positifs</a></li>
-            <li><a class="dropdown-item dropdownItem" href="main_N.php">+ négatifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix_random.php">avis aléatoires</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix_recent.php">+ récents</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix_positive.php">+ positifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix_negative.php">+ négatifs</a></li>
             <li><a class="dropdown-item dropdownItem" href="ranking.php">classement techniciens</a></li>
           </ul>
         </div>

@@ -18,6 +18,7 @@
             $_SESSION['sess_nom'] = $row['nom'];
             $_SESSION['sess_prenom'] = $row['prenom'];
             $_SESSION['sess_email'] = $row['email'];
+            $_SESSION['sess_choix'] = "random";
 
             header('location:main.php');
 
