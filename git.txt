@@ -29,5 +29,7 @@ git commit -m "ver.0.25 -- la page main/sondage se modifie en fonction du choix 
 
 git commit -m "ver.0.26 -- amélioration du code pour l'affichage des avis clients"
 
+git commit -m "ver.0.27 -- intégration code affichage mois en cours (BETA)"
+
 
 
