@@ -1,8 +1,8 @@
 <?php
     /* définition des variables intermédiaires de mois et année en fonction de la date actuelle */
+
     $annee = date("Y");
     $mois_num = date("m");
-    $mois_FR = "bidon";
 
     /* transformation de la valeur numérique du mois en sa signification en FR */
 
@@ -28,6 +28,21 @@
       case 7:
         $mois_FR = "Juillet";
         break;
+      case 8:
+        $mois_FR = "Août";
+        break;
+      case 9:
+        $mois_FR = "Septembre";
+        break;
+      case 10:
+        $mois_FR = "Octobre";
+        break;
+      case 11:
+        $mois_FR = "Novembre";
+        break;
+      case 12:
+        $mois_FR = "Décembre";
+        break;
       }
 
     $msg = ""; 
@@ -51,8 +66,9 @@
             $_SESSION['sess_email'] = $row['email'];
             /* définition des variables de session basées sur les choix utilisateur dans l'appli WEB */
             $_SESSION['sess_choix'] = "random";
-            $_SESSION['sess_mois'] = $mois_FR;
             $_SESSION['sess_annee'] = $annee;
+            $_SESSION['sess_mois_num'] = $mois_num;
+            $_SESSION['sess_mois_FR'] = $mois_FR;
 
             header('location:main.php');
 

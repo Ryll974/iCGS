@@ -9,11 +9,13 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 
 <!-- définition des variables choix_mois et choix_annee qui déterminent le mois qui sera affiché pour les avis  -->
 <!-- ainsi que le pourcentage de satisfaction global de ce mois -->
-<!-- par défaut initialisé à la valeur du mois en cours -->
-<!-- ce sont deux variables de session qui sont définies dans requete_login.php -->
+<!-- par défaut initialisé à la valeur du mois et de l'année en cours -->
+<!-- mois_num comprend les valeurs des mois de 1 à 12 et mois_FR de Janvier à Décembre -->
+<!-- ce sont des variables de session qui sont définies dans requete_login.php -->
 <!-- et modifiées ensuite par les modules php choix*.php en fonction des éléments choisis par l'utilisateur en cliquant sur l'icone calendrier -->
 <?php
-    $choix_mois = $_SESSION['sess_mois'];
+    $choix_mois_num = $_SESSION['sess_mois_num'];
+    $choix_mois_FR = $_SESSION['sess_mois_FR'];
     $choix_annee = $_SESSION['sess_annee'];
 ?>
 
@@ -63,10 +65,10 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           </a>
         </div>
         <div class="container navCenter">
-          <a class="active" href="#">
+          <a>
             <img id="calendar" src="ressources/navBar/calendar.png" alt="calendrier">
           </a>
-          <a id="displayMonth" href="#afficheMois"><?php echo $choix_mois; ?> <?php echo $choix_annee; ?></a>
+          <a id="displayMonth"><?php echo $choix_mois_FR; ?> <?php echo $choix_annee; ?></a>
         </div>
 
         <div class="dropdown dropdown-toggle caret-off navRight">

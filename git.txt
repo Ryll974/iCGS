@@ -33,5 +33,7 @@ git commit -m "ver.0.27 -- intégration code affichage mois en cours (BETA)"
 
 git commit -m "ver.0.28 -- CSS modif taille de l'img note globale pour les avis clients"
 
+git commit -m "ver.0.29 -- main/sondage - prise en compte des var. mois et année pour l'affichage des avis clients"
+
 
 
