@@ -1,8 +1,3 @@
-<?php 
-    include("modules/connexiondb.php");
-    include("modules/requete_calcul_pourcentage_global_mois.php");
-?>
-
 <?php
   if ($satisfaction_mois >= 85) {
     $circle_border = "circleBorderGreen";

@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+include("modules/connexiondb.php");
+
 // calcule le pourcentage global de satisfaction (table: avis_clients)
 // moyenne des 4 questions aux clients
 
@@ -19,7 +22,7 @@ try{
   echo $e->getMessage();
 }
 
-$satisfaction_mois = 21;
+$satisfaction_mois = 98;
 $total_questions = $count * 4;
 
 ?>

@@ -116,8 +116,16 @@ html, body {
 
 /* id NavBar -- Barre de Navigation */
 
-#navBar {
+#navBarGreen {
   background-image: linear-gradient(#333333, #00913E);
+}
+
+#navBarOrange {
+  background-image: linear-gradient(#333333, #FFC400);
+}
+
+#navBarRed {
+  background-image: linear-gradient(#333333, #FF0000);
 }
 
 #returnArrow {

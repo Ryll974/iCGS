@@ -39,5 +39,6 @@ git commit -m "ver.0.30 -- main+tech - implémentation menu changement mois et a
 
 git commit -m "ver.0.31 -- pré-implémentation calcul indice satisfaction global du mois sélectionné (BETA)"
 
+git commit -m "ver.0.32 -- nettoyage code + navBar et cercle central qui changent de couleur selon indice de satisfaction"
 
 

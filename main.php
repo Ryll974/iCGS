@@ -7,11 +7,6 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 }
 ?>
 
-<!-- définition des variables relatives aux indices de satisfaction  -->
-<?php
-  $satisfaction_mois = $_SESSION['sess_satisfaction_mois'];
-?>
-
 <!-- définition des variables choix_mois et choix_annee qui déterminent le mois qui sera affiché pour les avis  -->
 <!-- ainsi que le pourcentage de satisfaction global de ce mois -->
 <!-- par défaut initialisé à la valeur du mois et de l'année en cours -->
@@ -31,7 +26,6 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 <?php
     $choix_avis = $_SESSION['sess_choix'];
 ?>
-
 
 <!doctype html>
 <html lang="fr">
@@ -62,7 +56,8 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
   <body>
 
     <!-- affichage de la barre de navigation -->
-    <div id="navBar" class="container-fluid">
+    <?php include("modules/requete_calcul_pourcentage_global_mois.php");?>
+    <?php include("modules/div_navBar.php");?>
       <nav>
         <div class="navLeft">
           <a class="navbar-brand" href="modules/logout.php">
