@@ -51,6 +51,14 @@ html, body {
   text-shadow: 1px 1px 2px black;
 }
 
+.subnav-content{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
 /* page index.html -- page de login */
 
 .formCentered {

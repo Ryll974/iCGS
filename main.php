@@ -61,13 +61,37 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
       <nav>
         <div class="navLeft">
           <a class="navbar-brand" href="modules/logout.php">
-            <img id="returnArrow" src="ressources/navBar/returnArrow.png" alt="retour page login">
+            <img id="returnArrow" src="ressources/navBar/returnArrow.png" alt="déconnexion">
           </a>
         </div>
-        <div class="container navCenter">
-          <a>
+        <div class="container dropdown dropdown-toggle caret-off navCenter">
+          <a class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img id="calendar" src="ressources/navBar/calendar.png" alt="calendrier">
           </a>
+          <ul class="dropdown-menu dropdownMenu">
+            <li><a class="dropdown-item dropdownItem" href="#">► Année</a></li>
+              <div class="subnav-content">
+                <a href="#">2022</a>
+                <a href="#">2023</a>
+                <a href="#">2024</a>
+                <a href="#">2025</a>
+              </div>
+            <li><a class="dropdown-item dropdownItem" href="#">► Mois</a></li>
+              <div class="subnav-content">
+                <a href="modules/choix/main_choix_01.php">Jan</a>
+                <a href="modules/choix/main_choix_02.php">Fev</a>
+                <a href="modules/choix/main_choix_03.php">Mar</a>
+                <a href="modules/choix/main_choix_04.php">Avr</a>
+                <a href="modules/choix/main_choix_05.php">Mai</a>
+                <a href="modules/choix/main_choix_06.php">Jun</a>
+                <a href="modules/choix/main_choix_07.php">Jul</a>
+                <a href="modules/choix/main_choix_08.php">Aoû</a>
+                <a href="modules/choix/main_choix_09.php">Sep</a>
+                <a href="modules/choix/main_choix_10.php">Oct</a>
+                <a href="modules/choix/main_choix_11.php">Nov</a>
+                <a href="modules/choix/main_choix_12.php">Dec</a>
+              </div>
+          </ul>
           <a id="displayMonth"><?php echo $choix_mois_FR; ?> <?php echo $choix_annee; ?></a>
         </div>
 
@@ -76,10 +100,10 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
             <img id="menuHam" src="ressources/navBar/menuHam.png" alt="menu hamburger">
           </a>
           <ul class="dropdown-menu dropdownMenu">
-            <li><a class="dropdown-item dropdownItem" href="modules/choix_random.php">avis aléatoires</a></li>
-            <li><a class="dropdown-item dropdownItem" href="modules/choix_recent.php">+ récents</a></li>
-            <li><a class="dropdown-item dropdownItem" href="modules/choix_positive.php">+ positifs</a></li>
-            <li><a class="dropdown-item dropdownItem" href="modules/choix_negative.php">+ négatifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_random.php">avis aléatoires</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_recent.php">+ récents</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_positive.php">+ positifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_negative.php">+ négatifs</a></li>
             <li><a class="dropdown-item dropdownItem" href="ranking.php">classement techniciens</a></li>
           </ul>
         </div>

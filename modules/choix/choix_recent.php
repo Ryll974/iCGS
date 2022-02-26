@@ -5,6 +5,6 @@
     $_SESSION['sess_choix'] = "recent";
     }
 
-    header('location: ../main.php');
+    header('location: http://localhost/iCGS/main.php');
 
 ?>

@@ -5,6 +5,6 @@
     $_SESSION['sess_choix'] = "negative";
     }
 
-    header('location: ../main.php');
+    header('location: http://localhost/iCGS/main.php');
 
 ?>

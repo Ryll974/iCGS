@@ -7,6 +7,16 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 }
 ?>
 
+<!-- définition des variables choix_mois et choix_annee qui déterminent le mois qui sera affiché -->
+<!-- mois_num comprend les valeurs des mois de 1 à 12 et mois_FR de Janvier à Décembre -->
+<!-- ce sont des variables de session qui sont définies dans requete_login.php -->
+<!-- et modifiées ensuite par les modules php choix*.php en fonction des éléments choisis par l'utilisateur en cliquant sur l'icone calendrier -->
+<?php
+    $choix_mois_num = $_SESSION['sess_mois_num'];
+    $choix_mois_FR = $_SESSION['sess_mois_FR'];
+    $choix_annee = $_SESSION['sess_annee'];
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -41,11 +51,35 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
             <img id="returnArrow" src="ressources/navBar/returnArrow.png" alt="retour page sondage">
           </a>
         </div>
-        <div class="container navCenter">
-          <a class="active" href="#">
+        <div class="container dropdown dropdown-toggle caret-off navCenter">
+          <a class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img id="calendar" src="ressources/navBar/calendar.png" alt="calendrier">
           </a>
-          <a id="displayMonth" href="#afficheMois">Juin 2021</a>
+          <ul class="dropdown-menu dropdownMenu">
+            <li><a class="dropdown-item dropdownItem" href="#">► Année</a></li>
+              <div class="subnav-content">
+                <a href="#">2022</a>
+                <a href="#">2023</a>
+                <a href="#">2024</a>
+                <a href="#">2025</a>
+              </div>
+            <li><a class="dropdown-item dropdownItem" href="#">► Mois</a></li>
+              <div class="subnav-content">
+                <a href="modules/choix/tech_choix_01.php">Jan</a>
+                <a href="modules/choix/tech_choix_02.php">Fev</a>
+                <a href="modules/choix/tech_choix_03.php">Mar</a>
+                <a href="modules/choix/tech_choix_04.php">Avr</a>
+                <a href="modules/choix/tech_choix_05.php">Mai</a>
+                <a href="modules/choix/tech_choix_06.php">Jun</a>
+                <a href="modules/choix/tech_choix_07.php">Jul</a>
+                <a href="modules/choix/tech_choix_08.php">Aoû</a>
+                <a href="modules/choix/tech_choix_09.php">Sep</a>
+                <a href="modules/choix/tech_choix_10.php">Oct</a>
+                <a href="modules/choix/tech_choix_11.php">Nov</a>
+                <a href="modules/choix/tech_choix_12.php">Dec</a>
+              </div>
+          </ul>
+          <a id="displayMonth"><?php echo $choix_mois_FR; ?> <?php echo $choix_annee; ?></a>
         </div>
 
         <div class="dropdown dropdown-toggle caret-off navRight">
@@ -53,11 +87,10 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
             <img id="menuHam" src="ressources/navBar/menuHam.png" alt="menu hamburger">
           </a>
           <ul class="dropdown-menu dropdownMenu">
-            <li><a class="dropdown-item dropdownItem" href="#">avis aléatoires</a></li>
-            <li><a class="dropdown-item dropdownItem" href="#">+ pertinents</a></li>
-            <li><a class="dropdown-item dropdownItem" href="#">+ récents</a></li>
-            <li><a class="dropdown-item dropdownItem" href="#">+ positifs</a></li>
-            <li><a class="dropdown-item dropdownItem" href="#">+ négatifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_random.php">avis aléatoires</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_recent.php">+ récents</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_positive.php">+ positifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_negative.php">+ négatifs</a></li>
             <li><a class="dropdown-item dropdownItem" href="ranking.html">classement techniciens</a></li>
           </ul>
         </div>
