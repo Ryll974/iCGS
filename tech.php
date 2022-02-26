@@ -44,7 +44,8 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
   <body>
 
     <!-- affichage de la barre de navigation -->
-    <div id="navBar" class="container-fluid">
+    <?php include("modules/requete_calcul_pourcentage_global_mois.php");?>
+    <?php include("modules/div_navBar.php");?>
       <nav>
         <div class="navLeft">
           <a class="navbar-brand" href="http://localhost/iCGS/main.php">

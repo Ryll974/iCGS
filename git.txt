@@ -41,4 +41,6 @@ git commit -m "ver.0.31 -- pré-implémentation calcul indice satisfaction globa
 
 git commit -m "ver.0.32 -- nettoyage code + navBar et cercle central qui changent de couleur selon indice de satisfaction"
 
+git commit -m "ver.0.33 -- implémentation complète du calcul du % de satisfaction global du mois sélectionné"
+
 
