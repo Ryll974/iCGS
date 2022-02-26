@@ -9,10 +9,10 @@
         <table>
             <tr>
                 <td>
-                    <img src="ressources/main/<?php echo htmlspecialchars($row['ng']); ?>-Stars.png" alt="étoiles">
+                    <img id="stars" src="ressources/main/<?php echo htmlspecialchars($row['ng']); ?>-Stars.png" alt="étoiles">
                 </td>
                 <td>
-                    <p> -- <?php echo $choix_avis; ?> -- <?php echo htmlspecialchars($row['date_avis']); ?> -- <?php echo htmlspecialchars($row['avis']); ?></p>
+                    <p> <?php echo htmlspecialchars($row['date_avis']); ?> -- <?php echo htmlspecialchars($row['avis']); ?></p>
                 </td>
             </tr>
         </table>
