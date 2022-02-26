@@ -203,11 +203,29 @@ html, body {
 
 /* id page main.html -- page principale - sondage */
 
-#circleBorder {
+#circleBorderGreen {
   margin-top: -50px;
   border: 6px solid white;
   border-radius:50%;
   background-color: #00913E;
+  width: 100px;
+  height: 100px;
+}
+
+#circleBorderOrange {
+  margin-top: -50px;
+  border: 6px solid white;
+  border-radius:50%;
+  background-color: #FFC400;
+  width: 100px;
+  height: 100px;
+}
+
+#circleBorderRed {
+  margin-top: -50px;
+  border: 6px solid white;
+  border-radius:50%;
+  background-color: #FF0000;
   width: 100px;
   height: 100px;
 }

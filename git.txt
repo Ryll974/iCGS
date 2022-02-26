@@ -37,5 +37,7 @@ git commit -m "ver.0.29 -- main/sondage - prise en compte des var. mois et anné
 
 git commit -m "ver.0.30 -- main+tech - implémentation menu changement mois et année (dirty!!)"
 
+git commit -m "ver.0.31 -- pré-implémentation calcul indice satisfaction global du mois sélectionné (BETA)"
+
 
 

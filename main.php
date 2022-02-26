@@ -7,6 +7,11 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 }
 ?>
 
+<!-- définition des variables relatives aux indices de satisfaction  -->
+<?php
+  $satisfaction_mois = $_SESSION['sess_satisfaction_mois'];
+?>
+
 <!-- définition des variables choix_mois et choix_annee qui déterminent le mois qui sera affiché pour les avis  -->
 <!-- ainsi que le pourcentage de satisfaction global de ce mois -->
 <!-- par défaut initialisé à la valeur du mois et de l'année en cours -->
@@ -120,11 +125,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 
     <!-- affichage du cercle qui indique le % de satisfaction du mois en cours (ou du mois sélectionné) -->
     <!-- il est positionné sur le bas de la barre de navigation, au centre de l'écran, à cheval sur la ligne de séparation blanche -->
-    <div id="circleBorder" class="container-fluid">
-      <span id="percentageScore" class="container align-middle">
-        81
-      </span>
-    </div>
+    <?php include("modules/affiche_pourcentage_global_mois.php");?>
 
     <!-- codage des zones d'affichage des message et d'indice de satisfaction aux 4 questions -->
     <div class="container-fluid">
@@ -136,7 +137,6 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           </div>
 
           <article class="col-xs-1 col-sm-1 col-md-1 col-lg-1 boxFormat">
-
           </article>
         
           <article id="displayQuestions" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 boxFormat">

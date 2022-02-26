@@ -69,6 +69,8 @@
             $_SESSION['sess_annee'] = $annee;
             $_SESSION['sess_mois_num'] = $mois_num;
             $_SESSION['sess_mois_FR'] = $mois_FR;
+            /* définition des variables de session relatives à la satisfaction */
+            $_SESSION['sess_satisfaction_mois'] = 0.0;
 
             header('location:main.php');
 
