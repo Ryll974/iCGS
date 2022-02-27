@@ -22,6 +22,9 @@ try{
   echo $e->getMessage();
 }
 
+$total_avis = $count;
+// compter le nombre total de questions du mois sélectionné :
+// (4 questions par avis)
 $total_questions = $count * 4;
 
   // compter le nombre total d'avis satisfaits (1) à la Question 1 du mois sélectionné :
@@ -200,6 +203,9 @@ echo $e->getMessage();
 
 $total_q4_2 = $count * 50;
 
+// calcule du pourcentage global de satisfaction pour le mois sélectionné :
+// (comprend les avis aux questions 1, 2, 3 et 4)
+
 $total_satisfaits = $total_q1_1 + $total_q2_1 + $total_q3_1 + $total_q4_1;
 
 $total_neutres = $total_q1_2 + $total_q2_2 + $total_q3_2 + $total_q4_2;
@@ -208,6 +214,38 @@ if ($total_questions != 0) {
   $satisfaction_mois = round(($total_satisfaits + $total_neutres) / $total_questions);
 }else{
   $satisfaction_mois = 0;
+}
+
+// calcule l'indice de satisfaction à la question 1 pour le mois sélectionné :
+
+if ($total_avis != 0) {
+  $satisfaction_mois_q1 = round(($total_q1_1 + $total_q1_2) / $total_avis);
+}else{
+  $satisfaction_mois_q1 = 0;
+}
+
+// calcule l'indice de satisfaction à la question 2 pour le mois sélectionné :
+
+if ($total_avis != 0) {
+  $satisfaction_mois_q2 = round(($total_q2_1 + $total_q2_2) / $total_avis);
+}else{
+  $satisfaction_mois_q2 = 0;
+}
+
+// calcule l'indice de satisfaction à la question 3 pour le mois sélectionné :
+
+if ($total_avis != 0) {
+  $satisfaction_mois_q3 = round(($total_q3_1 + $total_q3_2) / $total_avis);
+}else{
+  $satisfaction_mois_q3 = 0;
+}
+
+// calcule l'indice de satisfaction à la question 4 pour le mois sélectionné :
+
+if ($total_avis != 0) {
+  $satisfaction_mois_q4 = round(($total_q4_1 + $total_q4_2) / $total_avis);
+}else{
+  $satisfaction_mois_q4 = 0;
 }
 
 ?>

@@ -43,4 +43,6 @@ git commit -m "ver.0.32 -- nettoyage code + navBar et cercle central qui changen
 
 git commit -m "ver.0.33 -- implémentation complète du calcul du % de satisfaction global du mois sélectionné"
 
+git commit -m "ver.0.34 -- main/sondage - affichage des indices de satisfaction aux 4 questions (BETA non-fonctionnel)"
+
 
