@@ -45,4 +45,6 @@ git commit -m "ver.0.33 -- implémentation complète du calcul du % de satisfact
 
 git commit -m "ver.0.34 -- main/sondage - affichage des indices de satisfaction aux 4 questions (BETA non-fonctionnel)"
 
+git commit -m "ver.0.35 -- main/sondage - affichage des indices de satisfaction aux 4 questions (fonctionnel)"
+
 
