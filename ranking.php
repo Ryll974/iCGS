@@ -102,6 +102,10 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <!-- affichage d'une ligne de séparation blanche -->
     <div id="whiteLine" class="container-fluid"></div>
 
+    <!-- affichage du cercle qui indique le % de satisfaction du mois en cours (ou du mois sélectionné) -->
+    <!-- il est positionné sur le bas de la barre de navigation, au centre de l'écran, à cheval sur la ligne de séparation blanche -->
+    <?php include("modules/affiche_pourcentage_global_mois.php");?>
+
     <!-- affichage du classement des techniciens en fonction du mois sélectionné -->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxFormat">
       <?php include("modules/affiche_classement_techs.php");?>

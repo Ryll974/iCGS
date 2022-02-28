@@ -53,4 +53,6 @@ git commit -m "ver.0.37 -- implémentation du classement des Techniciens (BETA)"
 
 git commit -m "ver.0.38 -- implémentation du classement des Techniciens (non-finalisé)"
 
+git commit -m "ver.0.39 -- ajout cercle satisfaction globale à la page de classement des techniciens"
+
 
