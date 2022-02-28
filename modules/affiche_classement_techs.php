@@ -4,22 +4,22 @@
 
 // médaille d'or
 $tech_num_1_id = 0;
-$tech_num_1_prenom = "NA";
-$tech_num_1_nom = "NA";
+$tech_num_1_prenom = "aucunes";
+$tech_num_1_nom = "données";
 $tech_num_1_indice_brut = 0;
 $tech_num_1_indice_arrondi = 0;
 
 // médaille d'argent
 $tech_num_2_id = 0;
-$tech_num_2_prenom = "NA";
-$tech_num_2_nom = "NA";
+$tech_num_2_prenom = "aucunes";
+$tech_num_2_nom = "données";
 $tech_num_2_indice_brut = 0;
 $tech_num_2_indice_arrondi = 0;
 
 // médaille de bronze
 $tech_num_3_id = 0;
-$tech_num_3_prenom = "NA";
-$tech_num_3_nom = "NA";
+$tech_num_3_prenom = "aucunes";
+$tech_num_3_nom = "données";
 $tech_num_3_indice_brut = 0;
 $tech_num_3_indice_arrondi = 0;
 
@@ -336,13 +336,15 @@ if ($indice_tech_en_cours_brut > $tech_num_1_indice_brut) {
     $tech_num_3_indice_arrondi = $indice_tech_en_cours_arrondi;
   }
 
-?>
-    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:blue;">Technicien n°<?php echo htmlspecialchars($row['id']); ?> <?php echo htmlspecialchars($row['prenom']); ?> <?php echo htmlspecialchars($row['nom']); ?> indice :  <?php echo htmlspecialchars($indice_tech_en_cours_brut); ?> % de satisfaction
+endwhile; ?>
+
+<div class = "tech">
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_1_id); ?>.png" width="96" height="96" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
     <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:yellow;"> Le 1er Technicien est : <?php echo htmlspecialchars($tech_num_1_prenom); ?> <?php echo htmlspecialchars($tech_num_1_nom); ?> avec <?php echo htmlspecialchars($tech_num_1_indice_brut); ?>%
+    </br>
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_2_id); ?>.png" width="96" height="96" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
     <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> Le 2eme Technicien est : <?php echo htmlspecialchars($tech_num_2_prenom); ?> <?php echo htmlspecialchars($tech_num_2_nom); ?> avec <?php echo htmlspecialchars($tech_num_2_indice_brut); ?>%
+    </br>
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_3_id); ?>.png" width="96" height="96" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
     <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:orange;"> Le 3eme Technicien est : <?php echo htmlspecialchars($tech_num_3_prenom); ?> <?php echo htmlspecialchars($tech_num_3_nom); ?> avec <?php echo htmlspecialchars($tech_num_3_indice_brut); ?>%
-    </br>
-    </br>
-    </br>
-    
-<?php endwhile; ?>
+</div>

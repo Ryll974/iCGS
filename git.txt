@@ -51,4 +51,6 @@ git commit -m "ver.0.36 -- modif BDD (les anciennes versions ne fonctionnent plu
 
 git commit -m "ver.0.37 -- implémentation du classement des Techniciens (BETA)"
 
+git commit -m "ver.0.38 -- implémentation du classement des Techniciens (non-finalisé)"
+
 
