@@ -49,4 +49,6 @@ git commit -m "ver.0.35 -- main/sondage - affichage des indices de satisfaction 
 
 git commit -m "ver.0.36 -- modif BDD (les anciennes versions ne fonctionnent plus)"
 
+git commit -m "ver.0.37 -- implémentation du classement des Techniciens (BETA)"
+
 
