@@ -55,4 +55,6 @@ git commit -m "ver.0.38 -- implémentation du classement des Techniciens (non-fi
 
 git commit -m "ver.0.39 -- ajout cercle satisfaction globale à la page de classement des techniciens"
 
+git commit -m "ver.0.40 -- implémentation fonctionelle de la page Tech (non complète)"
+
 

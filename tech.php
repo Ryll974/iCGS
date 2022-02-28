@@ -15,6 +15,8 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     $choix_mois_num = $_SESSION['sess_mois_num'];
     $choix_mois_FR = $_SESSION['sess_mois_FR'];
     $choix_annee = $_SESSION['sess_annee'];
+
+    $id = $_GET['id'];
 ?>
 
 <!doctype html>
@@ -108,6 +110,13 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 
     <!-- affichage du cercle central blanc positionné sur le bas de la barre de navigation -->
     <div id="centralCircle" class="container-fluid"></div>
+
+    <div class = "tech">
+
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($id); ?>.png" width="64" height="64" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
+      <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:orange;"> Technicien n° : <?php echo htmlspecialchars($id); ?>
+
+    </div>
 
   </body>
 

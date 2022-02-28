@@ -1,4 +1,5 @@
 <?php 
+
 // récupérer les avis de la Base de Donnée iCGS (table: avis_clients)
 
   switch ($choix_avis) {

@@ -35,18 +35,19 @@
 ?>
 
 <img src="ressources/main/q1-<?php echo $label_q1; ?>.png" alt="q1">
-</br>
+<h3 style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> <?php echo htmlspecialchars($satisfaction_mois_q1); ?>%
 </br>
 </br>
 </br>
 <img src="ressources/main/q2-<?php echo $label_q2; ?>.png" alt="q2">
-</br>
+<h3 style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> <?php echo htmlspecialchars($satisfaction_mois_q2); ?>%
 </br>
 </br>
 </br>
 <img src="ressources/main/q3-<?php echo $label_q3; ?>.png" alt="q3">
-</br>
+<h3 style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> <?php echo htmlspecialchars($satisfaction_mois_q3); ?>%
 </br>
 </br>
 </br>
 <img src="ressources/main/q4-<?php echo $label_q4; ?>.png" alt="q4">
+<h3 style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> <?php echo htmlspecialchars($satisfaction_mois_q4); ?>%

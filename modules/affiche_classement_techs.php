@@ -339,12 +339,12 @@ if ($indice_tech_en_cours_brut > $tech_num_1_indice_brut) {
 endwhile; ?>
 
 <div class = "tech">
-    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_1_id); ?>.png" width="96" height="96" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
-    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:yellow;"> Le 1er Technicien est : <?php echo htmlspecialchars($tech_num_1_prenom); ?> <?php echo htmlspecialchars($tech_num_1_nom); ?> avec <?php echo htmlspecialchars($tech_num_1_indice_brut); ?>%
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_1_id); ?>.png" width="64" height="64" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
+    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:yellow;"> Technicien n° 1 : <?php echo htmlspecialchars($tech_num_1_prenom); ?> <?php echo htmlspecialchars($tech_num_1_nom); ?> avec <?php echo htmlspecialchars($tech_num_1_indice_brut); ?>%
     </br>
-    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_2_id); ?>.png" width="96" height="96" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
-    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> Le 2eme Technicien est : <?php echo htmlspecialchars($tech_num_2_prenom); ?> <?php echo htmlspecialchars($tech_num_2_nom); ?> avec <?php echo htmlspecialchars($tech_num_2_indice_brut); ?>%
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_2_id); ?>.png" width="64" height="64" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
+    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"> Technicien n° 2 : <?php echo htmlspecialchars($tech_num_2_prenom); ?> <?php echo htmlspecialchars($tech_num_2_nom); ?> avec <?php echo htmlspecialchars($tech_num_2_indice_brut); ?>%
     </br>
-    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_3_id); ?>.png" width="96" height="96" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
-    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:orange;"> Le 3eme Technicien est : <?php echo htmlspecialchars($tech_num_3_prenom); ?> <?php echo htmlspecialchars($tech_num_3_nom); ?> avec <?php echo htmlspecialchars($tech_num_3_indice_brut); ?>%
+    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($tech_num_3_id); ?>.png" width="64" height="64" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
+    <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:orange;"> Technicien n° 3 : <?php echo htmlspecialchars($tech_num_3_prenom); ?> <?php echo htmlspecialchars($tech_num_3_nom); ?> avec <?php echo htmlspecialchars($tech_num_3_indice_brut); ?>%
 </div>
