@@ -47,4 +47,6 @@ git commit -m "ver.0.34 -- main/sondage - affichage des indices de satisfaction 
 
 git commit -m "ver.0.35 -- main/sondage - affichage des indices de satisfaction aux 4 questions (fonctionnel)"
 
+git commit -m "ver.0.36 -- modif BDD (les anciennes versions ne fonctionnent plus)"
+
 

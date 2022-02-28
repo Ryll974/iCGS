@@ -203,14 +203,14 @@ echo $e->getMessage();
 
 $total_q4_2 = $count * 50;
 
-// calcule du pourcentage global de satisfaction pour le mois sélectionné :
+// calcul du pourcentage global de satisfaction pour le mois sélectionné :
 // (comprend les avis aux questions 1, 2, 3 et 4)
 
 $total_satisfaits = $total_q1_1 + $total_q2_1 + $total_q3_1 + $total_q4_1;
 
 $total_neutres = $total_q1_2 + $total_q2_2 + $total_q3_2 + $total_q4_2;
 
-if ($total_questions != 0) {
+if ($total_avis != 0) {
   $satisfaction_mois = round(($total_satisfaits + $total_neutres) / $total_questions);
 }else{
   $satisfaction_mois = 0;

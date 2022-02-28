@@ -1,7 +1,7 @@
 <?php 
 // récupérer les Techniciens de la Base de Donnée iCGS (table: techs)
 
-  $sql = "SELECT identifiant FROM techs ORDER BY nom";
+  $sql = "SELECT * FROM techs ORDER BY nom";
    
   try{
  
