@@ -12,11 +12,15 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 <!-- ce sont des variables de session qui sont définies dans requete_login.php -->
 <!-- et modifiées ensuite par les modules php choix*.php en fonction des éléments choisis par l'utilisateur en cliquant sur l'icone calendrier -->
 <?php
-    $choix_mois_num = $_SESSION['sess_mois_num'];
-    $choix_mois_FR = $_SESSION['sess_mois_FR'];
-    $choix_annee = $_SESSION['sess_annee'];
 
-    $id = $_GET['id'];
+    $choix_mois_num = $_GET['mois'];
+    $choix_mois_FR = $_GET['mois_FR'];
+    $choix_annee = $_GET['annee'];
+
+  // récupère dans la variable id la valeur postée par le choix du technicien sélectionné dans la barre de scroll
+  
+  $id = $_GET['id'];
+
 ?>
 
 <!doctype html>
@@ -48,6 +52,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <!-- affichage de la barre de navigation -->
     <?php include("modules/requete_calcul_pourcentage_global_mois.php");?>
     <?php include("modules/div_navBar.php");?>
+    <?php include("modules/requete_stats_tech.php");?>
       <nav>
         <div class="navLeft">
           <a class="navbar-brand" href="http://localhost/iCGS/main.php">
@@ -68,18 +73,18 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
               </div>
             <li><a class="dropdown-item dropdownItem" href="#">► Mois</a></li>
               <div class="subnav-content">
-                <a href="modules/choix/tech_choix_01.php">Jan</a>
-                <a href="modules/choix/tech_choix_02.php">Fev</a>
-                <a href="modules/choix/tech_choix_03.php">Mar</a>
-                <a href="modules/choix/tech_choix_04.php">Avr</a>
-                <a href="modules/choix/tech_choix_05.php">Mai</a>
-                <a href="modules/choix/tech_choix_06.php">Jun</a>
-                <a href="modules/choix/tech_choix_07.php">Jul</a>
-                <a href="modules/choix/tech_choix_08.php">Aoû</a>
-                <a href="modules/choix/tech_choix_09.php">Sep</a>
-                <a href="modules/choix/tech_choix_10.php">Oct</a>
-                <a href="modules/choix/tech_choix_11.php">Nov</a>
-                <a href="modules/choix/tech_choix_12.php">Dec</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(1); ?>&mois_FR=<?php echo htmlspecialchars("Janvier"); ?>">Jan</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(2); ?>&mois_FR=<?php echo htmlspecialchars("Février"); ?>">Fev</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(3); ?>&mois_FR=<?php echo htmlspecialchars("Mars"); ?>">Mar</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(4); ?>&mois_FR=<?php echo htmlspecialchars("Avril"); ?>">Avr</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(5); ?>&mois_FR=<?php echo htmlspecialchars("Mai"); ?>">Mai</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(6); ?>&mois_FR=<?php echo htmlspecialchars("Juin"); ?>">Jun</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(7); ?>&mois_FR=<?php echo htmlspecialchars("Juillet"); ?>">Jul</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(8); ?>&mois_FR=<?php echo htmlspecialchars("Août"); ?>">Aoû</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(9); ?>&mois_FR=<?php echo htmlspecialchars("Septembre"); ?>">Sep</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(10); ?>&mois_FR=<?php echo htmlspecialchars("Octobre"); ?>">Oct</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(11); ?>&mois_FR=<?php echo htmlspecialchars("Novembre"); ?>">Nov</a>
+                <a href="http://localhost/iCGS/tech.php?id=<?php echo htmlspecialchars($row['id']); ?>&mois=<?php echo htmlspecialchars(12); ?>&mois_FR=<?php echo htmlspecialchars("Décembre"); ?>">Dec</a>
               </div>
           </ul>
           <a id="displayMonth"><?php echo $choix_mois_FR; ?> <?php echo $choix_annee; ?></a>
@@ -94,13 +99,13 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
             <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_recent.php">+ récents</a></li>
             <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_positive.php">+ positifs</a></li>
             <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_negative.php">+ négatifs</a></li>
-            <li><a class="dropdown-item dropdownItem" href="ranking.html">classement techniciens</a></li>
+            <li><a class="dropdown-item dropdownItem" href="ranking.php">classement techniciens</a></li>
           </ul>
         </div>
 
         <br>
         <span id="pageType" class="navbar-text">
-          Technicien
+        <?php echo $prenom_tech; ?> <?php echo $nom_tech; ?>
         </span>
       </nav>
     </div>
@@ -108,14 +113,13 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <!-- affichage d'une ligne de séparation blanche -->
     <div id="whiteLine" class="container-fluid"></div>
 
-    <!-- affichage du cercle central blanc positionné sur le bas de la barre de navigation -->
-    <div id="centralCircle" class="container-fluid"></div>
+    <!-- affichage du cercle qui affiche le portrait du technicien selectionné -->
+    <!-- il est positionné sur le bas de la barre de navigation, au centre de l'écran, à cheval sur la ligne de séparation blanche -->
+    <?php include("modules/affiche_portrait_tech.php");?>
 
-    <div class = "tech">
-
-    <img src="http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($id); ?>.png" width="64" height="64" alt="<?php echo htmlspecialchars($row['identifiant']); ?>" />
-      <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:orange;"> Technicien n° : <?php echo htmlspecialchars($id); ?>
-
+    <!-- affichage de la fiche du technicien sélectionné en fonction du mois sélectionné -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxFormat">
+      <?php include("modules/affiche_tech.php");?>
     </div>
 
   </body>

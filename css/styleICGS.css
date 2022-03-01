@@ -59,7 +59,7 @@ html, body {
   text-shadow: 1px 1px 2px black;
 }
 
-/* page index.html -- page de login */
+/* page index.php -- page de login */
 
 .formCentered {
   margin: auto;
@@ -78,7 +78,7 @@ html, body {
   margin-right: 1000px;
   }
 
-/* page main.html -- page de principale - sondage */
+/* page main.php -- page de principale - sondage */
 
 .avisClients {
   border-radius: 28px;
@@ -107,7 +107,7 @@ html, body {
 }
 
 .tech img {
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 /* --------------------------------------------- */
@@ -169,7 +169,7 @@ html, body {
   background-color: white;
 }
 
-/* id page index.html -- page de login */
+/* id page index.php -- page de login */
 
   #loginDiv {
     background: url(../ressources/login/iCGS-login.jpg) no-repeat center fixed;
@@ -209,7 +209,7 @@ html, body {
     border-radius: 28px;
   }
 
-/* id page main.html -- page principale - sondage */
+/* id page main.php -- page principale - sondage */
 
 #circleBorderGreen {
   margin-top: -50px;
@@ -272,9 +272,18 @@ html, body {
   border: 6px solid white;
   border-radius:28px;
 }
+
 /* id page affiche_avis.php -- page principale - sondage */
 
 #stars {
  width: 32px;
  height: 32px;
+}
+
+/* id page tech.php -- page duu technicien sélectionné */
+
+#portraitTech {
+  display: none;
+  margin-left: -10px;
+  line-height: 82px;
 }
