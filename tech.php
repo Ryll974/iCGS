@@ -66,10 +66,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           <ul class="dropdown-menu dropdownMenu">
             <li><a class="dropdown-item dropdownItem" href="#">► Année</a></li>
               <div class="subnav-content">
-                <a href="#">2022</a>
-                <a href="#">2023</a>
-                <a href="#">2024</a>
-                <a href="#">2025</a>
+                <?php include("modules/calendrier_affiche_annees.php");?>
               </div>
             <li><a class="dropdown-item dropdownItem" href="#">► Mois</a></li>
               <div class="subnav-content">

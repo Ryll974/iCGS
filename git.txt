@@ -59,4 +59,6 @@ git commit -m "ver.0.40 -- implémentation fonctionelle de la page Tech (non com
 
 git commit -m "ver.0.41 -- implémentation fonctionelle de la page Tech avec stats (bug! sur chgt de date)"
 
+git commit -m "ver.0.42 -- le choix de l'année affichée par le calendrier est fonction des années présentes dans la BDD"
+
 

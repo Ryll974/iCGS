@@ -69,10 +69,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           <ul class="dropdown-menu dropdownMenu">
             <li><a class="dropdown-item dropdownItem" href="#">► Année</a></li>
               <div class="subnav-content">
-                <a href="#">2022</a>
-                <a href="#">2023</a>
-                <a href="#">2024</a>
-                <a href="#">2025</a>
+                <?php include("modules/calendrier_affiche_annees.php");?>
               </div>
             <li><a class="dropdown-item dropdownItem" href="#">► Mois</a></li>
               <div class="subnav-content">
@@ -92,6 +89,20 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           </ul>
           <a id="displayMonth"><?php echo $choix_mois_FR; ?> <?php echo $choix_annee; ?></a>
         </div>
+
+        <div class="dropdown dropdown-toggle caret-off navRight">
+          <a class="btn navbar-toggler" href="#" role="button" id="buttonMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="menuHam" src="ressources/navBar/menuHam.png" alt="menu hamburger">
+          </a>
+          <ul class="dropdown-menu dropdownMenu">
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_random.php">avis aléatoires</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_recent.php">+ récents</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_positive.php">+ positifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="modules/choix/choix_negative.php">+ négatifs</a></li>
+            <li><a class="dropdown-item dropdownItem" href="ranking.php">classement techniciens</a></li>
+          </ul>
+        </div>
+
         <br>
         <span id="pageType" class="navbar-text">
           Classement Techniciens
