@@ -65,4 +65,6 @@ git commit -m "ver.0.43 -- CSS et php -- corrections esthétiques de l'interface
 
 git commit -m "ver.0.45 -- CSS/php/js -- améliorations UI -- barre de nav fixe en haut"
 
+git commit -m "ver.0.46 -- php -- modifications cosmétiques mineures page classement techs"
+
 
