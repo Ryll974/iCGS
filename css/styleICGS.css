@@ -2,6 +2,7 @@ html, body {
     background-color:black;
     margin:0px;
     height:100%;
+    overflow-x: hidden;
   }
 
 .navbar-toggler:focus
@@ -79,6 +80,28 @@ html, body {
   }
 
 /* page main.php -- page de principale - sondage */
+
+.scroll_avis {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* width */
+.scroll_avis::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scroll_avis::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scroll_avis::-webkit-scrollbar-thumb {
+  background: rgb(1, 153, 255);
+  border-radius: 10px;
+}
 
 .avisClients {
   border-radius: 28px;
@@ -174,10 +197,14 @@ html, body {
   #loginDiv {
     background: url(../ressources/login/iCGS-login.jpg) no-repeat center fixed;
     height:100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
 }
 
   #pplusLogo {
-    padding-top: 15em;
+    padding-top: 0em;
     padding-bottom: 5em;
     margin: auto;
     width: 25em;
@@ -194,9 +221,9 @@ html, body {
   }
 
   #loginButton {
-    position:absolute;
-    left: 0;
-    margin-left: auto;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
     right: 0;
     margin-right: auto;
     margin-top: 2em;
@@ -211,31 +238,24 @@ html, body {
 
 /* id page main.php -- page principale - sondage */
 
-#circleBorderGreen {
+#circleBorderGreen,#circleBorderOrange,#circleBorderRed {
   margin-top: -50px;
   border: 6px solid white;
   border-radius:50%;
   background-color: #00913E;
   width: 100px;
   height: 100px;
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
 }
 
 #circleBorderOrange {
-  margin-top: -50px;
-  border: 6px solid white;
-  border-radius:50%;
   background-color: #FFC400;
-  width: 100px;
-  height: 100px;
 }
 
 #circleBorderRed {
-  margin-top: -50px;
-  border: 6px solid white;
-  border-radius:50%;
   background-color: #FF0000;
-  width: 100px;
-  height: 100px;
 }
 
 #percentageScore {
@@ -254,6 +274,7 @@ html, body {
   height: 60em;
   border: 6px solid white;
   border-radius: 28px;
+  overflow-y: hidden;
 }
 
 #avisClients {
@@ -271,6 +292,16 @@ html, body {
   height: 60em;
   border: 6px solid white;
   border-radius:28px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#displayQuestions>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* id page affiche_avis.php -- page principale - sondage */

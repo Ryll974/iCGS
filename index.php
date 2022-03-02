@@ -42,7 +42,7 @@ session_start();
             <label class="sr-only loginText">Password</label>
             <input name="mdp" type="password" id="loginPassword" class="form-control" placeholder="password">
             </div class="sr-only">
-              <span style="font-family: 'Roboto', sans-serif;font-style: italic;color:white;"><?php echo @$msg;?></span>
+              <p style="font-family: 'Roboto', sans-serif;font-style: italic;color:white; text-align:center; margin-top:20px"><?php echo @$msg;?></p>
             </div>
             <button type="submit" name="submitBtnLogin" id="loginButton" class="btn btn-lg btn-primary btn-signin" type="submit">Login</button>
           </form>

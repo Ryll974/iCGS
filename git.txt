@@ -61,4 +61,6 @@ git commit -m "ver.0.41 -- implémentation fonctionelle de la page Tech avec sta
 
 git commit -m "ver.0.42 -- le choix de l'année affichée par le calendrier est fonction des années présentes dans la BDD"
 
+git commit -m "ver.0.43 -- CSS et php -- corrections esthétiques de l'interface UI"
+
 

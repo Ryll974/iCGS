@@ -126,7 +126,9 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
 
           <!-- zones d'affichage des avis clients -->
           <div id="displayMessages" class="col-xs-9 col-sm-9 col-md-9 col-lg-9 boxFormat">
-            <?php include("modules/affiche_avis.php");?>
+            <div class="scroll_avis">
+              <?php include("modules/affiche_avis.php");?>
+            </div>
           </div>
 
           <!-- espace entre les deux zones d'affichage -->
