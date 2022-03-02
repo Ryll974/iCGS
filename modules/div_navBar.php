@@ -8,4 +8,4 @@
   }
 ?>
 
-<div id="<?php echo $navBar_color; ?>" class="container-fluid">
+<div id="<?php echo $navBar_color; ?>" class="container-fluid fixed-top">

@@ -15,6 +15,10 @@ html, body {
 /* les classes -- par ordre d'apparition dans le code */
 /* -------------------------------------------------- */
 
+.isVisible {
+  display: none;
+}
+
 /* NavBar -- Barre de Navigation */
 
 .navLeft {
@@ -42,6 +46,7 @@ html, body {
   border-width: 5px;
   border-color: white;
   box-shadow: 5px 5px 5px black;
+  z-index: 9000!important;
 }
 
 .dropdownItem{
@@ -80,6 +85,10 @@ html, body {
   }
 
 /* page main.php -- page de principale - sondage */
+
+.decalage{
+  padding-top: 166px;
+}
 
 .scroll_avis {
   overflow-y: scroll;
@@ -190,6 +199,8 @@ html, body {
 #whiteLine {
   height: 0.3em;
   background-color: white;
+  position: fixed;
+  top: 139px;
 }
 
 /* id page index.php -- page de login */
@@ -246,8 +257,13 @@ html, body {
   width: 100px;
   height: 100px;
   background-position: center;
-  background-size: 75%;
+  background-size: 90%;
   background-repeat: no-repeat;
+  position: fixed;
+  z-index: 9000;
+  top: 139px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #circleBorderOrange {
@@ -271,7 +287,7 @@ html, body {
 
 #displayMessages {
   background-color: #333333;
-  height: 60em;
+  height: 50em;
   border: 6px solid white;
   border-radius: 28px;
   overflow-y: hidden;
@@ -289,7 +305,7 @@ html, body {
   background-color: #333333;
   background-image: url(../ressources/main/bgQuestionsBar.jpg);
   background-size: cover;
-  height: 60em;
+  height: 50em;
   border: 6px solid white;
   border-radius:28px;
   display:flex;

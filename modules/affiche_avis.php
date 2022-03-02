@@ -5,6 +5,7 @@
 
 <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
 
+    </br>
     <div class="avisClients">
         <table>
             <tr>

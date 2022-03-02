@@ -63,4 +63,6 @@ git commit -m "ver.0.42 -- le choix de l'année affichée par le calendrier est 
 
 git commit -m "ver.0.43 -- CSS et php -- corrections esthétiques de l'interface UI"
 
+git commit -m "ver.0.45 -- CSS/php/js -- améliorations UI -- barre de nav fixe en haut"
+
 

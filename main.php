@@ -46,8 +46,6 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <link rel="stylesheet" type="text/css" href="css/styleICGS.css">
     <!-- appel du JavaScript Bootstrap Bundle avec Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- appel du JavaScript custom à la page principale / Sondage -->
-    <script src="js/icgs.js"></script>
 
     <title>iCGS main</title>
 
@@ -65,7 +63,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           </a>
         </div>
         <div class="container dropdown dropdown-toggle caret-off navCenter">
-          <a class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a id="btnCalendrier" class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img id="calendar" src="ressources/navBar/calendar.png" alt="calendrier">
           </a>
           <ul class="dropdown-menu dropdownMenu">
@@ -120,7 +118,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <?php include("modules/affiche_pourcentage_global_mois.php");?>
 
     <!-- codage des zones d'affichage des message et d'indice de satisfaction aux 4 questions -->
-    <div class="container-fluid">
+    <div class="container-fluid decalage">
       <div class="container">
         <div class="row">
 
@@ -148,6 +146,9 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <div class="techs">
       <?php include("modules/affiche_techs.php");?>
     </div>
+
+  <!-- appel du JavaScript custom iCGS -->
+  <script src="js/icgs.js"></script>
 
   </body>
 

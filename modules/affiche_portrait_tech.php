@@ -9,5 +9,5 @@
   }
 ?>
 
-<div id="<?php echo $circle_border; ?>" class="container-fluid tech" style="background-image: url('http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($id); ?>.png')">
+<div id="<?php echo $circle_border; ?>" class="container-fluid tech cercleCentral" style="background-image: url('http://localhost/iCGS/ressources/images/Techs/<?php echo htmlspecialchars($id); ?>.png')">
 </div>

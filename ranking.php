@@ -63,7 +63,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
           </a>
         </div>
         <div class="container dropdown dropdown-toggle caret-off navCenter">
-          <a class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a id="btnCalendrier" class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img id="calendar" src="ressources/navBar/calendar.png" alt="calendrier">
           </a>
           <ul class="dropdown-menu dropdownMenu">
@@ -118,9 +118,12 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <?php include("modules/affiche_pourcentage_global_mois.php");?>
 
     <!-- affichage du classement des techniciens en fonction du mois sélectionné -->
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxFormat">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxFormat decalage">
       <?php include("modules/affiche_classement_techs.php");?>
     </div>
+
+  <!-- appel du JavaScript custom iCGS -->
+  <script src="js/icgs.js"></script>
 
   </body>
 

@@ -59,7 +59,7 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
             <img id="returnArrow" src="ressources/navBar/returnArrow.png" alt="retour page sondage">
           </a>
         </div>
-        <div class="container dropdown dropdown-toggle caret-off navCenter">
+        <div id="btnCalendrier" class="container dropdown dropdown-toggle caret-off navCenter">
           <a class="btn navbar-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img id="calendar" src="ressources/navBar/calendar.png" alt="calendrier">
           </a>
@@ -115,9 +115,12 @@ if(isset($_SESSION['sess_id']) && $_SESSION['sess_nom'] != "") {
     <?php include("modules/affiche_portrait_tech.php");?>
 
     <!-- affichage de la fiche du technicien sélectionné en fonction du mois sélectionné -->
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxFormat">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxFormat decalage">
       <?php include("modules/affiche_tech.php");?>
     </div>
+
+  <!-- appel du JavaScript custom iCGS -->
+  <script src="js/icgs.js"></script>
 
   </body>
 

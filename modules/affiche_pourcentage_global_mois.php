@@ -8,7 +8,7 @@
   }
 ?>
 
-<div id="<?php echo $circle_border; ?>" class="container-fluid">
+<div id="<?php echo $circle_border; ?>" class="container-fluid cercleCentral">
   <span id="percentageScore" class="container align-middle">
     <?php echo $satisfaction_mois; ?>
   </span>
